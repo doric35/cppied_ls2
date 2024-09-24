@@ -53,7 +53,7 @@ cd ..\
 ./build/initialization_algorithm init_config.toml\
 ./build/local_search_algorithm ls_config.toml
 
-##Acknowledgments
+## Acknowledgments
 This work was funded by:
 - Fonds de recherche du Québec – Nature et technologies (FRQNT)
 - Natural Sciences and Engineering Research Council of Canada Search (NSERC)
