@@ -17,7 +17,7 @@ id2: Lateral range curve model; mod_id; Lateral range curve model approximation 
 The input of the executables are toml config files structured as:\
 \[problem_parameters\] \
 problem_file = "./data/test/instance_id/cppied_problem.txt" # Seabed encoding source\
-solution_file = "/data/test/instance_id/cppied_solution.txt" # Solution encoding target\
+solution_file = "/data/test/instance_id/cppied_solution.txt" # Solution encoding source&target (first entry is used a initial position)\
 coverage_file = "/data/test/instance_id/cppied_coverage.txt" # Coverage encoding target\
 pod_file = "/data/test/instance_id/cppied_pod.txt" # Lateral range curve approximation source\
 required_coverage = 0.9 # w_{min}\
