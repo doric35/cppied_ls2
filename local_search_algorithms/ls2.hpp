@@ -15,7 +15,7 @@ namespace local_search{
         unsigned mLocalCost;
 
         /*Algorithm parameters*/
-        int mNPerturbations, mNImprovements, mMaxTime, mMaxSubsequences,mMaxBadIter;
+        int mNPerturbations, mNImprovements, mMaxTime, mMaxSubsequences;
         unsigned short mNeighbourhoodWidth;
         std::vector<unsigned> mTspSolution;
         std::vector<csp::active_node_neighbors> mLateralNbh;
@@ -50,12 +50,12 @@ namespace local_search{
         /*Constructor Methods*/
         void generate_nbh();
         template<typename... Args>
-        ls2(int pMaxBadIter, int pNPerturbations,
+        ls2(int pNPerturbations,
             int pNImprovements, int pMaxTime,
             int pNeighbourhoodWidth, int pMaxSubsequences,
             Args&&... pCppiedArgs) :
                 cppied_algorithm(std::forward<Args>(pCppiedArgs)...),
-                mNPerturbations(pNPerturbations), mMaxBadIter(pMaxBadIter),
+                mNPerturbations(pNPerturbations),
                 mNImprovements(pNImprovements), mMaxTime(pMaxTime), mMutableSolution(), mMaxSubsequences(pMaxSubsequences), mNeighbourhoodWidth(pNeighbourhoodWidth),
                 mLateralNbh(), mVerticalNbh(), mTspSolution(), mLocalCost(0)
         {
