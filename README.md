@@ -41,7 +41,7 @@ epsilon = 0.5 # See the paper for algorithm parameters details.\
 ## Dependencies
 [Concorde solver](https://www.math.uwaterloo.ca/tsp/concorde.html)\
 [Qsopt](https://www.math.uwaterloo.ca/~bico/qsopt/)\
-[Cplex](https://www.ibm.com/products/ilog-cplex-optimization-studio)\
+[Cplex](https://www.ibm.com/products/ilog-cplex-optimization-studio)
 
 ## How to run
 Compile using cmake with the CMakeList.txt (include -O3 option) in "build" directory.\
